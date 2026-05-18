@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        body { background: #020617; color: white; font-family: sans-serif; }
+        .card { background: rgba(255,255,255,0.05); padding: 40px; border-radius: 20px; }
+        input { background: #0f172a; border: 1px solid #334155; color: white; }
+        button { background: #10b981; color: #020617; font-weight: bold; }
+    </style>
+</head>
+<body>
+<form th:action="@{/login}" method="post">
+    <h1>Welcome Back</h1>
+    <input name="username" type="text"/>
+    <input name="password" type="password"/>
+    <button>SIGN IN</button>
+</form>
+</body>
+</html>

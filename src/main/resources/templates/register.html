@@ -1,0 +1,9 @@
+<form th:action="@{/register}" th:object="${request}" method="post" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="grid">
+        <input th:field="*{username}" placeholder="Username"/>
+        <input th:field="*{password}" type="password"/>
+        <input th:field="*{nama}" placeholder="Full Name"/>
+        <input th:field="*{alamat}" placeholder="Address"/>
+    </div>
+    <button type="submit">CREATE ACCOUNT</button>
+</form>
